@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #2a2a2a;
+}
+
+body {
+  background-color: #343434;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.content-wrap {
+  width: 98%;
+  max-width: 1180px;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  height: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+  color: #babbbe;
+  font-size: 1.3rem;
+}
+
+.login h3 {
+  font-weight: 400;
+}
+
+.login label {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  font-size: .7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100%;
+}
+
+.login input.password-input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #babbbe;
+  color: #babbbe;
+  padding: 0.5rem 0;
+}
+
+.login button {
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+  padding: 8px 35px;
+  text-transform: uppercase;
+  border: 2px solid #a8041f;
+  border-color: #a8041f;
+  border-radius: 3px;
+  background-color: #a8041f;
+  color: #babbbe;
+  text-shadow: 0 1px rgb(0 0 0 / 15%);
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.login button:hover {
+  background-color: transparent;
+  border-color: #babbbe;
+  color: #babbbe;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.video-grid iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 576px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .video-grid iframe {
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .video-grid iframe {
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .video-grid iframe {
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .video-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .video-grid iframe {
+    height: 160px;
+  }
+}
