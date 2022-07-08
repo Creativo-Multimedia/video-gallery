@@ -72,7 +72,13 @@ function App() {
           <div className='video-grid'>
             {videosSrc.map((el, idx) => {
               return (
-                <iframe src={`https://www.youtube.com/embed/${el}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen key={idx}></iframe>
+                <div className='item' key={idx}>
+                  <a href={`https://drive.google.com/file/d/${el.src}/view`} target='_blank' rel="noreferrer" className='video-link-element'>
+                    <i class="far fa-play-circle"></i>
+                    <p>{el.title}</p>
+                  </a>
+                  <img src='./play.svg' className='play-icon' />
+                </div>
               )
             })}
           </div>

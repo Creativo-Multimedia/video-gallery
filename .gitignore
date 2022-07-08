@@ -24,3 +24,8 @@ yarn-error.log*
 
 # data
 data.js
+
+# firebase
+.firebase
+.firebaserc
+firebase.json

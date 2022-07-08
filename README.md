@@ -10,15 +10,13 @@ Install dependencies:
 npm i
 ```
 
-Create src/data.js file with Youtube videos src and passcode:
+Create src/data.js file with Gdrive videos src and passcode:
 
 ```bash
 export const videosSrc = [
-    'bWJor9riaBA',
-    'dBUd46cZzSA',
-    'LZ76g07JElo',
-    't_XwTYsvWBo',
-    'qsU7HayzD4I',
+    { src: '1mAE5e4tRpeT2tJ2', title: 'Title 1' },
+    { src: '1XYYj9S_iI_tUaRjV', title: 'Title 2' },
+    { src: '1pKehZliPcLnxp7', title: 'Title 3' },
 ]
 export const PASSCODE = 'secretcode'
 ```
