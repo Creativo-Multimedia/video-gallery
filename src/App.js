@@ -77,7 +77,7 @@ function App() {
                     <i class="far fa-play-circle"></i>
                     <p>{el.title}</p>
                   </a>
-                  <img src='./play.svg' className='play-icon' />
+                  <img src='./play.svg' className='play-icon' alt={el.title} />
                 </div>
               )
             })}
