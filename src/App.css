@@ -93,6 +93,7 @@ body {
 
 .video-grid .item a:visited {
   border-color: #474747;
+  color: #626262;
 }
 
 .video-grid a.video-link-element {
