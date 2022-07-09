@@ -44,6 +44,10 @@ function App() {
   return (
     <div className="App">
       <div className='content-wrap'>
+        <div className='home-link'>
+          <a href='https://ginkgopm.com.uy/' target='_blank' rel="noreferrer"><i class="fas fa-home"></i> Volver a Inicio</a>
+          <div className='separator'></div>
+        </div>
         {!data.isLogged ? (
           <div className='login'>
             <h3>Ingrese la contraseña que le fué proporcionada para ver los videos</h3>

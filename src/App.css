@@ -30,7 +30,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
-  height: 100%;
+  height: 90%;
   max-width: 330px;
   margin: 0 auto;
   color: #babbbe;
@@ -120,6 +120,27 @@ body {
 .video-grid a.video-link-element i {
   font-size: 3rem;
   display: none;
+}
+
+.home-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+  padding: 1rem;
+}
+
+.home-link a {
+  color: #babbbe;
+  text-decoration: none;
+}
+
+.home-link .separator {
+  width: 2rem;
+  height: .1rem;
+  background-color: #babbbe;
+  
 }
 
 @media screen and (min-width: 768px) {
